@@ -1,7 +1,7 @@
 import React from "react";
 import ExpenseItem from "./ExpenseItem";
-import "./expenses.css";
-import Card from "./Card";
+import "./ExpenseDate.css";
+import Card from "../UI/Card";
 import "./ExpenseItem.css";
 
 export default function Expenses({ props }) {
@@ -35,20 +35,6 @@ export default function Expenses({ props }) {
       >
         {" "}
       </ExpenseItem>
-      <button
-        onClick={() => {
-          console.log("clicked");
-        }}
-      >
-        {" "}
-      </button>
-      <button
-        onClick={() => {
-          console.log("clicked");
-        }}
-      >
-        {" "}
-      </button>
     </Card>
   );
 }

@@ -1,5 +1,5 @@
-import "./NewExpenseForm.js";
 import NewExpenseForm from "./NewExpenseForm.js";
+import "./NewExpenses.css";
 
 export default function NewExpenses() {
   return (

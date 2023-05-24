@@ -1,6 +1,6 @@
-import ExpenseItem from "./components/ExpenseItem";
-import Card from "./components/Card";
-import Expenses from "./components/Expenses";
+import ExpenseItem from "./components/Expenses/ExpenseItem";
+import Card from "./components/UI/Card";
+import Expenses from "./components/Expenses/Expenses";
 import NewExpenses from "./components/NewExpenses/NewExpenses";
 
 function App() {
@@ -26,10 +26,10 @@ function App() {
     },
   ];
   return (
-    <>
+    <div>
       <NewExpenses />
       <Expenses props={expenses} />
-    </>
+    </div>
   );
 }
 
