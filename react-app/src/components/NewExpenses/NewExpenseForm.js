@@ -1,6 +1,7 @@
 import "./NewExpenseForm.css";
+import "./NewExpenses.css";
 export default function NewExpenseForm() {
-  <div>
+  return (
     <form>
       <div className="new-expense__controls">
         <div className="new-expense__control">
@@ -17,8 +18,8 @@ export default function NewExpenseForm() {
         </div>
       </div>
       <div className="new-expense__actions">
-        <button type="submit" />
+        <button type="submit"> Submit </button>
       </div>
     </form>
-  </div>;
+  );
 }

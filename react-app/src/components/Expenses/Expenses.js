@@ -6,7 +6,7 @@ import "./ExpenseItem.css";
 
 export default function Expenses({ props }) {
   return (
-    <Card className="expenses">
+    <div className="expenses">
       <ExpenseItem
         title={props[0].title}
         amount={props[0].amount}
@@ -35,6 +35,6 @@ export default function Expenses({ props }) {
       >
         {" "}
       </ExpenseItem>
-    </Card>
+    </div>
   );
 }
