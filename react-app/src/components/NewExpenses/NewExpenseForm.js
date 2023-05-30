@@ -38,10 +38,12 @@ export default function NewExpenseForm(props) {
       date: new Date(EnteredDate),
     };
     props.onSaveNewExpenses(newExpense);
+
     setEnteredAmount("");
     setEnteredDate("");
     setEnteredTitle("");
-    console.log(newExpense);
+
+    //console.log(newExpense);
   };
   return (
     <form onSubmit={formSubmitHandler}>
