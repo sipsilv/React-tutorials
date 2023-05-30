@@ -3,6 +3,7 @@ import ExpenseItem from "./ExpenseItem";
 import "./ExpenseDate.css";
 import Card from "../UI/Card";
 import "./ExpenseItem.css";
+import ExpensesFilter from "./ExpensesFilter";
 
 export default function Expenses({ props }) {
   return (
