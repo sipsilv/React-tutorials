@@ -7,7 +7,14 @@ import "./ExpenseItem.css";
 export default function Expenses({ props }) {
   return (
     <div className="expenses">
-      <ExpenseItem
+      {props.map((expenses) => (
+        <ExpenseItem
+          title={expenses.title}
+          amount={expenses.amount}
+          date={expenses.date}
+        />
+      ))}
+      {/* <ExpenseItem
         title={props[0].title}
         amount={props[0].amount}
         date={props[0].date}
@@ -34,7 +41,7 @@ export default function Expenses({ props }) {
         date={props[3].date}
       >
         {" "}
-      </ExpenseItem>
+      </ExpenseItem> */}
     </div>
   );
 }
