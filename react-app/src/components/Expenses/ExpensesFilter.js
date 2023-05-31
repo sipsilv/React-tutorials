@@ -1,10 +1,11 @@
 import "./ExpensesFilter.css";
+import Card from "../UI/Card";
 export default function ExpensesFilter(props) {
-  const dropdownChangeHandler = (props) => {
-    props.onChangeFilter(props.target.value);
+  const dropdownChangeHandler = (event) => {
+    props.onChangeFilter(event.target.value);
   };
   return (
-    <div className="expenses-filter">
+    <Card className="expenses-filter">
       <div className="expenses-filter__control">
         <label>Filter by year</label>
         <select value={props.selected} onChange={dropdownChangeHandler}>
@@ -14,6 +15,6 @@ export default function ExpensesFilter(props) {
           <option value="2019">2019</option>
         </select>
       </div>
-    </div>
+    </Card>
   );
 }

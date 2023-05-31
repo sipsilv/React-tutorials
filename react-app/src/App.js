@@ -36,9 +36,11 @@ function App() {
       return [expense, ...prevState];
     });
   };
+
   return (
     <div>
       <NewExpenses onAddExpense={addExpenseHandler} />
+
       <Expenses props={expenses} />
     </div>
   );
